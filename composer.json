@@ -15,7 +15,7 @@
         "twig/cache-extension": "^1.4"
     },
     "autoload": {
-        "classmap": ["src/"],
+        "classmap": ["src/"]
     },
     "type": "opus-package",
     "extra": {
