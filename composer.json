@@ -1,0 +1,28 @@
+{
+    "name": "hiraeth/twig-cache",
+    "description": "Twig cache extension for the Hiraeth Nano Framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":  "Matthew J. Sahagian",
+            "email": "matthew.sahagian@gmail.com",
+            "role":  "Lead Architect / Developer"
+        }
+    ],
+    "require": {
+        "hiraeth/app": "^2.0",
+        "hiraeth/caching": "^1.0",
+        "twig/cache-extension": "^1.4"
+    },
+    "autoload": {
+        "classmap": ["src/"],
+    },
+    "type": "opus-package",
+    "extra": {
+        "opus": {
+            "hiraeth/app": {
+                "config": ""
+            }
+        }
+    }
+}
