@@ -2,6 +2,7 @@
 
 namespace Hiraeth\Twig\Cache;
 
+use Hiraeth\Caching;
 use RuntimeException;
 use Twig\CacheExtension\CacheStrategy;
 
@@ -10,15 +11,15 @@ class KeyGenerator implements CacheStrategy\KeyGeneratorInterface
 	/**
 	 *
 	 */
-    public function generateKey($value)
-    {
-		if (!$value instanceof KeyGeneratorInterface) {
+	public function generateKey($value)
+	{
+		if (!$value instanceof Caching\KeyGenerator) {
 			throw new RuntimeException(sprintf(
 				'Invalid key provided for cache, must implement "%s"',
-				KeyGeneratorInterface::class
+				Caching\KeyGenerator::class
 			));
 		}
 
-		return $value->generateKey();
-    }
+		return $value->generateCacheKey();
+	}
 }

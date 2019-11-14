@@ -1,6 +1,8 @@
 {
     "name": "hiraeth/twig-cache",
     "description": "Twig cache extension for the Hiraeth Nano Framework",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +15,9 @@
         "hiraeth/app": "^2.0",
         "hiraeth/caching": "^1.0",
         "twig/cache-extension": "^1.4"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.11.19"
     },
     "autoload": {
         "classmap": ["src/"]
